@@ -1,0 +1,1 @@
+"""LaLiga prediction bot package."""
