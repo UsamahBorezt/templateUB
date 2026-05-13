@@ -32,3 +32,7 @@ Contoh hasil disimpan ke:
 python -m laliga_bot.main train --data /path/to/matches.csv
 python -m laliga_bot.main predict --data /path/to/upcoming_or_recent.csv --limit 10
 ```
+
+
+## Polymarket adaptor (MVP)
+Gunakan `laliga_bot.polymarket` untuk menghitung implied probability dan edge decision (take/skip) berdasarkan threshold minimum edge.
