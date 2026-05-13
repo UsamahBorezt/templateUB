@@ -36,3 +36,21 @@ python -m laliga_bot.main predict --data /path/to/upcoming_or_recent.csv --limit
 
 ## Polymarket adaptor (MVP)
 Gunakan `laliga_bot.polymarket` untuk menghitung implied probability dan edge decision (take/skip) berdasarkan threshold minimum edge.
+
+
+## Setup cepat environment
+Jika dependency belum terpasang, jalankan:
+```bash
+./scripts_setup_env.sh
+```
+
+Atau manual:
+```bash
+python -m venv .venv
+source .venv/bin/activate
+python -m pip install --upgrade pip
+python -m pip install -r laliga_bot/requirements.txt
+python -m unittest discover -s tests
+```
+
+Jika instalasi gagal karena pembatasan network/proxy di environment, lakukan setup di mesin lokal atau CI runner yang punya akses ke PyPI.
